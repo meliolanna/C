@@ -8,6 +8,7 @@
 - salvataggio pid dei processi e stampa dopo il ritorno
 - creazione file con nome dato da concatenazione di cose
 
+# SCHEMA 
 A - PROCESSI COMUNICANTI
 1. Figli che comunicano con padre o viceversa
 2. Figli che inviano in pipeline al padre o si fermano all'ultimo figlio
