@@ -8,6 +8,12 @@
 - salvataggio pid dei processi e stampa dopo il ritorno
 - creazione file con nome dato da concatenazione di cose
 
+24set11
+- nipoti e figli comunicano con pipe creata in figlio ma chiudendo 0 e 1
+- si usano le exec con le ridirezioni sia per nipote-figlio che nipote-padre
+- padre legge le linee e basta
+
+  
 # SCHEMA 
 A - PROCESSI COMUNICANTI
 1. Figli che comunicano con padre o viceversa
