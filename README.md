@@ -8,20 +8,20 @@
 - salvataggio pid dei processi e stampa dopo il ritorno
 - creazione file con nome dato da concatenazione di cose
 
-	• A - PROCESSI COMUNICANTI
-		○ 1- Figli che comunicano con padre o viceversa
-		○ Figli che inviano in pipeline al padre o si fermano all'ultimo figlio
-			§ La pipeline può procedere dal primo all'ultimo e poi forse al padre
-			§ O viceversa e poi padre 
-		○ Figli che comunicano con nipoti, entrambe i versi
-		○ Nipoti con padre o viceverssa
-		○ Figli a coppie
-			§ Figlio pari e figlio dispari
-			§ Figlio i e i+N
-			§ Figlio i e N-1-i, etc
-		○ Figli che comunicano a schema a ring
-			§ Senza padre, quindi padre solo da innesco 
-			§ Con padre nel ring, quindi pipe una in più dei figli 
+A - PROCESSI COMUNICANTI
+	1. Figli che comunicano con padre o viceversa
+	2. Figli che inviano in pipeline al padre o si fermano all'ultimo figlio
+		§ La pipeline può procedere dal primo all'ultimo e poi forse al padre
+		§ O viceversa e poi padre 
+	3. Figli che comunicano con nipoti, entrambe i versi
+	4. Nipoti con padre o viceverssa
+	5. Figli a coppie
+		§ Figlio pari e figlio dispari
+		§ Figlio i e i+N
+		§ Figlio i e N-1-i, etc
+	6. Figli che comunicano a schema a ring
+		§ Senza padre, quindi padre solo da innesco 
+		§ Con padre nel ring, quindi pipe una in più dei figli 
 	Possono avere un reale scambio effettivo di informazioni o semplicemente di una sincronizzazione con un 'token' che è un singolo carattere. Meglio molto fare le sincronizzazioni con token, segnali molto sconisgliati.
 
 	• B - NUMERO DI INFORMZIONI
@@ -32,4 +32,3 @@
 		○ In ordine file e processi -> ultimo primo o viceversa
 		○ 2 - Se più info magari con istruzioni precise, sia figli in certo ordine al padre o viceversa
 		○ Ordine specifico, tipo prima tutti i pari o cose così
-![image](https://github.com/user-attachments/assets/94653f46-8d78-4e4b-9ba3-6c967f9a6c89)
